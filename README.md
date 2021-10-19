@@ -9,9 +9,12 @@
 
 # 互联网反卷指南
 
-> 2021-10-13 更新： 整合 [WorkerLivesMatter](https://github.com/WorkerLivesMatter/WorkingTime) 数据
+> 2021-10-19 更新： 整合 [WorkerLivesMatter](https://github.com/WorkerLivesMatter/WorkingTime) 数据
+
 > 2021-10-19 更新：整合[996icu][https://github.com/996icu/996.icu] 数据
+
 > 2021-10-19 更新：整合[955.WLB][https://github.com/formulahendry/955.wlb] 数据
+
 > 2021-10-19 更新：整合[ShameCom][https://github.com/shamecom/shamecom] 数据
 
 ## 准备
