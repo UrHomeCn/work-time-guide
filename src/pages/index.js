@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Tabs, Tooltip, Select, Table } from 'antd';
+import { Tabs, Tooltip, Select, Table, Button, Divider } from 'antd';
 import 'antd/dist/antd.css';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
 import WLB from '../components/995wlb';
 import { useAllCollections } from '../hooks/useCollection';
 import { columns } from '../static/indexTable';
+
 const filterOption = { company: '', city: '', work: '' };
 
 const IndexPage = () => {
@@ -113,6 +114,14 @@ const IndexPage = () => {
       <div className="flex w-full mt-4 flex-col items-center gap-4 sm:flex-row">
         <Tabs defaultActiveKey="1" centered>
           <TabPane tab="WorkingTime" key="1">
+            <Button
+              type="primary"
+              href="https://docs.qq.com/form/page/DWmxJZ1ZxVHhBblJB#/fill"
+              target="_blank"
+            >
+              新增作息调查问卷
+            </Button>
+            <Divider />
             <div className="flex w-full mt-4 flex-col items-center gap-4 sm:flex-row">
               {selectPageData.map((item, index) => (
                 <Select
@@ -137,12 +146,6 @@ const IndexPage = () => {
                 </Select>
               ))}
             </div>
-            {/* <Switch
-              checkedChildren="开启"
-              unCheckedChildren="关闭"
-              defaultChecked
-              onChange={ switchOnChange }
-            /> */}
             <Table
               className="mt-6"
               columns={columns}
@@ -193,7 +196,7 @@ const IndexPage = () => {
             <WLB />
           </TabPane>
           <TabPane tab="ShameCom" key="4">
-            ShameCom
+            待完善
           </TabPane>
         </Tabs>
       </div>
