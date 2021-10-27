@@ -9,7 +9,7 @@
 
 # 互联网反卷指南
 
-> 2021-10-19 更新： 整合 [WorkerLivesMatter](https://github.com/WorkerLivesMatter/WorkingTime) 数据
+> 2021-10-25 更新： 整合 [WorkerLivesMatter](https://github.com/WorkerLivesMatter/WorkingTime) 数据
 
 > 2021-10-19 更新：整合[996icu][https://github.com/996icu/996.icu] 数据
 

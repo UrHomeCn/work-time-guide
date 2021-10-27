@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Tabs, Tooltip, Select, Table, Button, Divider } from 'antd';
+import { Tabs, Tooltip, Select, Table, Divider } from 'antd';
 import 'antd/dist/antd.css';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
@@ -59,7 +59,21 @@ const IndexPage = () => {
       </div>
       <div className="mt-6 text-gray-900 dark:text-white">
         <p className="border-l-4 border-gray-200 py-2 my-3 px-3 text-gray-500 dark:text-white">
-          2021-10-19 更新： 整合{' '}
+          2021-10-26 整合：
+          <a
+            className="text-blue-700 transition hover:text-blue-600 dark:text-blue-400  dark:hover:text-blue-300"
+            href="https://github.com/xiaochaohit/955.Remote"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Tooltip title="持续收录可支持远程办公的优秀企业名单">
+              <span>955.Remote</span>
+            </Tooltip>
+          </a>{' '}
+          数据
+        </p>
+        <p className="border-l-4 border-gray-200 py-2 my-3 px-3 text-gray-500 dark:text-white">
+          2021-10-25 更新：
           <a
             className="text-blue-700 transition hover:text-blue-600 dark:text-blue-400  dark:hover:text-blue-300"
             href="https://github.com/WorkerLivesMatter/WorkingTime"
@@ -71,7 +85,7 @@ const IndexPage = () => {
           数据
         </p>
         <p className="border-l-4 border-gray-200 py-2 my-3 px-3 text-gray-500 dark:text-white">
-          2021-10-19 更新： 整合{' '}
+          2021-10-19 更新：
           <a
             className="text-blue-700 transition hover:text-blue-600 dark:text-blue-400  dark:hover:text-blue-300"
             href="https://github.com/996icu/996.ICU"
@@ -85,7 +99,7 @@ const IndexPage = () => {
           数据
         </p>
         <p className="border-l-4 border-gray-200 py-2 my-3 px-3 text-gray-500 dark:text-white">
-          2021-10-19 更新： 整合{' '}
+          2021-10-19 更新：
           <a
             className="text-blue-700 transition hover:text-blue-600 dark:text-blue-400  dark:hover:text-blue-300"
             href="https://github.com/formulahendry/955.WLB"
@@ -99,14 +113,16 @@ const IndexPage = () => {
           数据
         </p>
         <p className="border-l-4 border-gray-200 py-2 my-3 px-3 text-gray-500 dark:text-white">
-          2021-10-19 更新： 整合{' '}
+          2021-10-19 更新：
           <a
             className="text-blue-700 transition hover:text-blue-600 dark:text-blue-400  dark:hover:text-blue-300"
             href="https://github.com/ShameCom/ShameCom"
             target="_blank"
             rel="noreferrer"
           >
-            ShameCom
+            <Tooltip title="校招污点公司记录">
+              <span>ShameCom</span>
+            </Tooltip>
           </a>{' '}
           数据
         </p>
@@ -114,13 +130,13 @@ const IndexPage = () => {
       <div className="flex w-full mt-4 flex-col items-center gap-4 sm:flex-row">
         <Tabs defaultActiveKey="1" centered>
           <TabPane tab="WorkingTime" key="1">
-            <Button
+            {/* <Button
               type="primary"
               href="https://docs.qq.com/form/page/DWmxJZ1ZxVHhBblJB#/fill"
               target="_blank"
             >
               新增作息调查问卷
-            </Button>
+            </Button> */}
             <Divider />
             <div className="flex w-full mt-4 flex-col items-center gap-4 sm:flex-row">
               {selectPageData.map((item, index) => (
@@ -196,6 +212,9 @@ const IndexPage = () => {
             <WLB />
           </TabPane>
           <TabPane tab="ShameCom" key="4">
+            待完善
+          </TabPane>
+          <TabPane tab="955.Remote" key="5">
             待完善
           </TabPane>
         </Tabs>

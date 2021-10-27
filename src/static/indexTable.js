@@ -93,9 +93,21 @@ export const columns = [
     width: 120,
   },
   {
-    title: '35岁/总人数',
+    title: '35岁以上/总人数',
     dataIndex: 'personForm',
     key: 'personForm',
+    width: 120,
+  },
+  {
+    title: '是否有其他福利（如：五险一金，带薪年假，公费旅游，免费三餐）',
+    dataIndex: 'otherWelfare',
+    key: 'otherWelfare',
+    width: 120,
+  },
+  {
+    title: '是否为外资企业',
+    dataIndex: 'isForeignEnterprise',
+    key: 'isForeignEnterprise',
     width: 120,
   },
 ];

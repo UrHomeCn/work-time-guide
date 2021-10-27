@@ -22,6 +22,10 @@ const useAllCollections = () => {
             report
             note
             industry
+            suggest
+            personForm
+            otherWelfare
+            isForeignEnterprise
           }
         }
       }

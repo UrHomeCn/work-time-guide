@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 const Layout = ({ children }) => (
   <>
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <main className="flex flex-col items-start flex-1 max-w-4xl px-4 py-8 md:py-12">
+      <main className="flex flex-col items-start flex-1 max-w-6xl px-4 py-8 md:py-12">
         {children}
       </main>
       <footer className="mb-4">
